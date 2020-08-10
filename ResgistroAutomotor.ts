@@ -1,92 +1,74 @@
 
-class Automotores {
 
-    private camiones: string;
-    private motos: string;
-    
+import * as fs from 'fs';
+import * as readlineSync from 'readline-sync';
+
+class Vehiculo{
+    private marca: string;
+    private modelo: number;
+    private velocidadMax: number;
 
     
     
-    public constructor(camiones: string, motos: string) {
-        this.camiones = camiones;
-        this.motos = motos;
+    public constructor(marca: string, modelo: number, velocidadMax: number) {
+        this.marca=marca;
+        this.modelo=modelo;
+        this.velocidadMax=velocidadMax;
     }
 
-    public SetCamiones(): void{
-        this.camiones=this.camiones;
-    }
-
     
-    public SetMotos(): void{
-        this.motos=this.motos;
+    
+    public setVelocidadMaxima(velocidadMaxima: number): void {
+        this.velocidadMax=this.velocidadMax;
     }
 
+    public getMarca() :String {
+        return this.marca;
+    }
+
+    public getModelo () :Number {
+        return this.modelo;
+    }
+
+    public getVelMax () :Number {
+        return this.velocidadMax; 
+    }
 }
 
-
-
-
-   
-    
-class Camiones extends Automotores{
+class Camion extends Vehiculo{
   
-    private marcas = String;
-    private modelos = String;
-    private año: number;
+    private tara : number;
+    private  longitud : number;
     
-    public constructor(camiones: string, motos: string) {
-        super(camiones, motos);        
-        this.año=this.año;
-        this.marcas=this.marcas;
-        this.modelos=this.modelos;
+    public constructor(marca: string, modelo: number, velocidadMax: number, tara: number,longitud:number) {
+        super(marca,modelo,velocidadMax );
+        this.tara= tara;
+        this.longitud= longitud;
     }
     
-    public Marcas(marcas: String): void{
-        this.marcas = this.marcas;
+    public Marcas(longitud: number): void{
+        this.longitud = longitud;
     }
      
-    public Modelo(modelos: String): void{
-        this.modelos = this.modelos;
-    }
-
-    public Año(año: number): void{
-        this.año= this.año;
-    }
-    
-
-    
+    public Modelo(tara: number): void{
+        this.tara = tara;
+    }    
 }    
 
-   
-   
+class Motos extends Vehiculo {
+    private cilindrada : number;
 
-
-
-
-
-class Motos extends Automotores {
-    private marcas :String;
-    private modelos:String;
-    private año: number;
-
-    public constructor(marca: string, modelo: string,marcas: String, modelos: String, año: number) {
-        super(marca, modelo);  
-        this.marcas= marcas;
-        this.modelos = modelos;
-        this.año = año;
+    public constructor(marca: string, modelo: number, velocidadMax: number, cilindrada: number) {
+        super(marca, modelo, velocidadMax);
+        this.cilindrada=cilindrada;
     }
 
-    public Marcas(marcas: String): void{
-        this.marcas=marcas;
-    }
-     
-    public Modelo(modelos: String): void{
-        this.modelos = modelos;
+    public getCilindrada (): number {
+        return this.cilindrada;
     }
 
-    public Año(año: number): void{
-        this.año=año;
-    }
 } 
 
+let automotores = new Motos("fdsfas",4,4,1);
 
+let automotores1 = new Camion("fdsfas",4,4,1,4);
