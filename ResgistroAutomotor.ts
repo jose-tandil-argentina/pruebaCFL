@@ -69,6 +69,7 @@ class Motos extends Vehiculo {
 
 } 
 
-let automotores = new Motos("fdsfas",4,4,1);
-
-let automotores1 = new Camion("fdsfas",4,4,1,4);
+let automotores = new Motos("Honda",2016,200,100);
+let automotores1 = new Motos("Gilera",2019,200,100);
+let automotores2 = new Camion("Mercedes",2020,220,100,400);
+let automotores3 = new Camion("Iveco",2020,220,100,400);
