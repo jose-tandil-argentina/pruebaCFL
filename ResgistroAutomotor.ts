@@ -46,11 +46,11 @@ class Camion extends Vehiculo{
         this.longitud= longitud;
     }
     
-    public Marcas(longitud: number): void{
+    public setMarcas(longitud: number): void{
         this.longitud = longitud;
     }
      
-    public Modelo(tara: number): void{
+    public setModelo(tara: number): void{
         this.tara = tara;
     }    
 }    
