@@ -12,17 +12,17 @@ class Telefono{
        this.linternaPrendida = false;
    }
 
-   public mandarMensajes(): boolean{
+   public getEstaPrendido(): boolean{
+       return false;
+   }
+
+   public getBateriiaActual(): number{
+       return this.bateriaActual=100;
+   }
+
+
+   public prenderApagarLinterna(): boolean {
        return true;
-   }
-
-   public hacerLlamda():void{
-
-   }
-
-
-   public prenderApagar(): void {
-
    }
 }
 
@@ -51,16 +51,16 @@ class TelefonoConCamara extends Telefono{
 
 let samsung : TelefonoConCamara = new TelefonoConCamara();
 console.log(samsung.sacarFoto)
-samsung.hacerLlamda();
-samsung.mandarMensajes();
-samsung.prenderApagar();
+samsung.getBateriiaActual();
+samsung.getEstaPrendido();
+samsung.prenderApagarLinterna();
 samsung.sacarFoto();
 
 
 let motorola : TelefonoConCamara = new TelefonoConCamara();
 console.log(motorola.sacarFoto());
-motorola.hacerLlamda();
-motorola.mandarMensajes();
-motorola.prenderApagar();
-motorola.sacarFoto();
+motorola.getBateriiaActual();
+motorola.getEstaPrendido();
+samsung.prenderApagarLinterna();
+samsung.sacarFoto();
 
