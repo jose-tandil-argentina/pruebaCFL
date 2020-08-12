@@ -12,22 +12,36 @@ class Telefono{
        this.linternaPrendida = false;
    }
 
+
+   public setBateriaActual(bateriaActual: number): void{
+       this.bateriaActual = bateriaActual;
+   }
+
+   public setEstaPrendido(estaPrendido: boolean): void {
+       this.estaPrendido = estaPrendido;
+   }
+
+   public getPrenderApagarLinterna(): void{
+       if(this.linternaPrendida)
+       this.estaPrendido = true;
+       else
+       this.estaPrendido = false;
+   }
+
+
    public getEstaPrendido(): boolean{
        return false;
    }
 
    public getBateriiaActual(): number{
-       return this.bateriaActual=100;
+       return this.bateriaActual;
    }
 
 
-   public prenderApagarLinterna(): boolean {
-       return true;
-   }
 }
 
 
-class Camara{
+class Camara {
     public savarFoto(): string{
         return "la foto del dia";
     }
@@ -50,10 +64,10 @@ class TelefonoConCamara extends Telefono{
 }
 
 let samsung : TelefonoConCamara = new TelefonoConCamara();
-console.log(samsung.sacarFoto)
+console.log(samsung.sacarFoto);
 samsung.getBateriiaActual();
 samsung.getEstaPrendido();
-samsung.prenderApagarLinterna();
+samsung.getPrenderApagarLinterna();
 samsung.sacarFoto();
 
 
@@ -61,6 +75,6 @@ let motorola : TelefonoConCamara = new TelefonoConCamara();
 console.log(motorola.sacarFoto());
 motorola.getBateriiaActual();
 motorola.getEstaPrendido();
-samsung.prenderApagarLinterna();
-samsung.sacarFoto();
+motorola.getPrenderApagarLinterna();
+motorola.sacarFoto();
 
