@@ -21,6 +21,7 @@ class Telefono{
        this.estaPrendido = estaPrendido;
    }
 
+   
    public getPrenderApagarLinterna(): void{
        if(this.linternaPrendida)
        this.estaPrendido = true;
@@ -32,6 +33,7 @@ class Telefono{
    public getEstaPrendido(): boolean{
        return false;
    }
+
 
    public getBateriiaActual(): number{
        return this.bateriaActual;
