@@ -1,0 +1,15 @@
+{
+  "name": "ejercico2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ejercicio" : "tsc lejagosDeColegio.ts & node LegajosDeColegio.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
