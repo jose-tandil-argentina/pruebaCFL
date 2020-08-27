@@ -24,17 +24,18 @@ class Telefono{
        this.estaPrendido = estaPrendido;
    }
 
+
    
-   public getPrenderApagarLinterna(): void{
-       if(this.linternaPrendida)
-       this.estaPrendido = true;
-       else
-       this.estaPrendido = false;
+   public getPrenderApagarLinterna(): boolean{
+       return this.linternaPrendida
    }
 
 
-   public getEstaPrendido(): boolean{
-       return false;
+   public getEstaPrendido(): void{
+       if(this.estaPrendido)
+       this.estaPrendido = true;
+       else
+       this.estaPrendido  = false;
    }
 
 
@@ -47,8 +48,15 @@ class Telefono{
 
 
 class Camara {
-    public savarFoto(): string{
-        return "la foto del dia";
+
+    private sacarFotos: string;
+
+    public setsacarFoto( sacarFotos: string): void{
+        this.sacarFotos=sacarFotos;
+    }
+
+    public getsacarFoto(): string{
+        return this.sacarFotos;
     }
 }
 
@@ -66,7 +74,7 @@ class TelefonoConCamara extends Telefono{
     }
 
     public sacarFoto(): string{
-        return this.camara.savarFoto();
+        return this.camara.getsacarFoto();
     }
 }
 
@@ -85,4 +93,4 @@ motorola.getBateriiaActual();
 motorola.getEstaPrendido();
 motorola.getPrenderApagarLinterna();
 motorola.sacarFoto();
-
+motorola.setEstaPrendido(true);
