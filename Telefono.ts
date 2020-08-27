@@ -47,20 +47,6 @@ class Telefono{
 }
 
 
-class Camara {
-
-    private sacarFotos: string;
-
-    public setsacarFoto( sacarFotos: string): void{
-        this.sacarFotos=sacarFotos;
-    }
-
-    public getsacarFoto(): string{
-        return this.sacarFotos;
-    }
-}
-
-
 
 class TelefonoConCamara extends Telefono{
     private camara: Camara;
@@ -77,6 +63,25 @@ class TelefonoConCamara extends Telefono{
         return this.camara.getsacarFoto();
     }
 }
+
+
+
+class Camara extends TelefonoConCamara{
+    private sacarFotos: string;
+
+    public constructor(){
+        super();
+    }
+
+    public setsacarFoto( sacarFotos: string): void{
+        this.sacarFotos=sacarFotos;
+    }
+
+    public getsacarFoto(): string{
+        return this.sacarFotos;
+    }
+}
+
 
 
 let samsung : TelefonoConCamara = new TelefonoConCamara();
