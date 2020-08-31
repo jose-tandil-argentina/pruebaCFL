@@ -1,6 +1,5 @@
-NPM tiene como uso los pauqetes de instalacion.
+NPM tiene como uso los paquetes de instalacion.
 Cuando se corre el comando tsc a la ves corre el comando node.
 Las Clases se organizan en forma lineal sobre atributos, constructor y metodos getters y setters.
 sobre el metodo auxiliar es conveniente que sea publico ya que sirve para guardar datos.
-Caracteristicas de una interfaz: no tiene atributos pero tiene metodos abstractos.
-    
+Caracteristicas de una interfaz: no tiene atributos pero tiene metodos abstractos

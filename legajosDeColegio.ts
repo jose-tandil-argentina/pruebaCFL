@@ -1,5 +1,4 @@
-import * as fs from 'fs';
-import * as readlineSync from 'readline-sync';
+
 
 class Colegio{
     private alumnos: number;
@@ -95,9 +94,10 @@ class Colegio{
 }
 
 let colegio = new Colegio();
+console.log("")
 colegio.setNombre("franco");
 colegio.setNombre("morales");
+console.log("")
 colegio.setFechaDeNacimiento(19/1/1999);
 colegio.setPromedioAlumno(9);
-
-console.log(colegio);
+console.log("")

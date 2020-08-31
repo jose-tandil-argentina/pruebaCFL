@@ -1,0 +1,4 @@
+singleton es un patron creacional es para una unica clase instaciada es restringir el accesos a la clase y 
+cuando se implementa  singleton el constructor es private 
+nose puede llamar al metodo directo sino que se debe hacerlo
+desde la clase directamente y luego llamar al metodo para obtener la variable. 
