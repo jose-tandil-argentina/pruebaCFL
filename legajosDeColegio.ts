@@ -94,10 +94,10 @@ class Colegio{
 }
 
 let colegio = new Colegio();
-console.log("")
+console.log("");
 colegio.setNombre("franco");
 colegio.setNombre("morales");
-console.log("")
+console.log("");
 colegio.setFechaDeNacimiento(19/1/1999);
 colegio.setPromedioAlumno(9);
-console.log("")
+console.log("");
