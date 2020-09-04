@@ -6,7 +6,7 @@ import {Alumnos} from "./alumnos"
 import {GradosSecundaria}  from "./gradosDeSecundaria"
 
 
-
+/*
 let colegio = new Colegio();
 
 
@@ -18,7 +18,7 @@ alumnos1.setEdad(20);
 alumnos1.setNacimiento(21/1/2000);
 alumnos1.setLocalidad("tandil");
 alumnos1.setNacionalidad("argentina");
-
+*/
 
 
 
