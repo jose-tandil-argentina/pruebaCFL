@@ -52,4 +52,6 @@ export class Colegio {
         return this.alumnos;
     }
 
+
+    
 }
